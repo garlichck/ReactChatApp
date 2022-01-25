@@ -7,6 +7,9 @@ import './App.css';
 const projectID = 'c90e2720-25f1-4494-ae87-3031781d69c0';
 
 const App = () => {
+
+console.log(process.env.REACT_APP_ENV);
+
   if (!localStorage.getItem('username')) return <LoginForm />;
 
   return (
